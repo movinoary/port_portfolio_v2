@@ -12,6 +12,7 @@ import UiVOFEE2 from "../../public/project/UI-VOFFEE-2.png";
 import UiMicasa1 from "../../public/project/UI-MICASA-1.png";
 import UiMicasa2 from "../../public/project/UI-MICASA-2.png";
 import UiSidebar from "../../public/project/UI-Sidebar-mapid.png";
+import UiVape from "../../public/project/15.Vape_Storage.png";
 
 export const list_project = [
   {
@@ -162,6 +163,17 @@ export const list_project = [
     photo: UiSidebar,
     linkWeb:
       "https://www.figma.com/proto/7cx23NnoO7Gl2gExnzbeWE/SIDEBAR-MAPID?page-id=0%3A1&type=design&node-id=1-2&viewport=718%2C497%2C0.13&t=uGuqGY9o7gjIRvWE-1&scaling=min-zoom&starting-point-node-id=1%3A2&mode=design",
+    linkGit: "",
+  },
+  {
+    id: 14,
+    title: "Vape Storage",
+    techology: [],
+    category: "ui desain",
+    desc: "",
+    photo: UiVape,
+    linkWeb:
+      "https://www.figma.com/proto/E5V3nsNndKNaN2CPtlC2kQ/GATAU?page-id=32%3A2913&type=design&node-id=32-2914&viewport=718%2C496%2C0.13&t=40tyA8FoYFBC2kBO-1&scaling=min-zoom&starting-point-node-id=32%3A2914",
     linkGit: "",
   },
 ];

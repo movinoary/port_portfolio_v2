@@ -33,7 +33,10 @@ const Project = () => {
   const ButtonCategory = ({ title }: valueButton) => (
     <button
       className={category === title ? "active" : "non_active"}
-      onClick={() => setCategory(title)}
+      onClick={() => {
+        setCategory(title);
+        addPage(1);
+      }}
     >
       {title}
     </button>
@@ -62,7 +65,7 @@ const Project = () => {
                 <>
                   <Link
                     className="framer_motion"
-                    href={item?.linkGit}
+                    href={item?.linkWeb}
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -72,7 +75,7 @@ const Project = () => {
                   </Link>
                   <Link
                     className="github"
-                    href={item.linkWeb}
+                    href={item.linkGit}
                     target="_blank"
                     rel="noreferrer"
                   >

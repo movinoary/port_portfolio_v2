@@ -81,12 +81,17 @@
       border: none;
       cursor: pointer;
       text-decoration: none;
+      transition: $fast;
+      &:hover {
+        transition: $fast;
+        color: $color100;
+      }
     }
   }
 }
 
 .about {
-  @include size(100%, 50vh, 15%);
+  @include size(100%, 80vh, 15%);
   @include flex(column, center, center, 10px);
   background-color: $color400;
   h1 {
@@ -94,23 +99,50 @@
     font-size: $bigParagraph;
     font-weight: 500;
     text-align: justify;
-
-    &:nth-child(2) {
-      width: 100%;
-      text-align: left;
-      color: $color100;
-    }
   }
 
-  .row {
+  .content {
     @include size(100%, 100%, 0);
-    @include flex(row, space-between, center, 10px);
+    @include flex(row, space-between, flex-start, 10px);
     margin-top: 10px;
     div {
       width: 100%;
-      border-bottom: 2px solid $color100;
       h1 {
+        border-bottom: 2px solid $color100;
         text-align: center;
+        margin-bottom: 1rem;
+      }
+    }
+    .row {
+      width: 100%;
+      margin-bottom: 1rem;
+      @include flex(row, space-around, center, 10px);
+
+      p {
+        @include flex(row, center, center, 0);
+        width: 100%;
+        font-size: $title;
+        position: relative;
+
+        * {
+          transition: $fast;
+        }
+        span {
+          position: absolute;
+          font-size: 0;
+          color: $color000;
+          background-color: $color300;
+          border-radius: 25px;
+          padding: 0;
+          top: 0;
+        }
+        &:hover {
+          span {
+            top: -2rem;
+            padding: 5px 10px;
+            font-size: $paragraph;
+          }
+        }
       }
     }
   }
@@ -297,4 +329,61 @@
 }
 .react_query {
   color: #ea580c;
+}
+.bootstrap {
+  color: #563d7c;
+}
+.html {
+  color: #e34c26;
+}
+.css {
+  color: #264de4;
+}
+.javascript {
+  color: #f0db4f;
+}
+.nodeJS {
+  color: #215732;
+}
+.express {
+  color: #3c873a;
+}
+.postgresql {
+  color: #0064a5;
+}
+.mysql {
+  color: #00758f;
+}
+.docker {
+  color: #0db7ed;
+}
+.Sequelize {
+  color: #02afef;
+}
+.postman {
+  color: #ef5b25;
+}
+.vscode {
+  color: #0078d7;
+}
+.Illustrator {
+  color: #f8a829;
+}
+.figma {
+  color: #fff;
+}
+.ubuntu {
+  color: #dd4814;
+}
+.windows {
+  color: #00adef;
+}
+.netlify {
+  color: #32e6e2;
+}
+.vercel {
+  color: #fff;
+}
+.typescript {
+  color: #007acc;
 }
