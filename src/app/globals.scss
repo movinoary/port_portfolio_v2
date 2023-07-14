@@ -1,0 +1,300 @@
+@import "./Variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 17px;
+  z-index: 1;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $color300;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $color100;
+  border-radius: 10px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: $color200;
+}
+
+.nav {
+  position: fixed;
+  @include size(100%, 10vh, 1.5rem 3rem);
+  @include flex(row, space-between, center, 10px);
+  h1 {
+    @include title($color100, $title, 800);
+    cursor: pointer;
+  }
+  div {
+    @include flex(row, center, center, 1rem);
+    button {
+      font-size: $paragraph;
+      color: $color100;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.header {
+  @include size(100%, 100vh, 15%);
+  @include flex(column, center, center, 10px);
+  background-color: $color300;
+
+  p {
+    color: $color200;
+    font-size: $bigParagraph;
+    font-weight: 600;
+  }
+
+  h1 {
+    color: $color100;
+    font-size: $bigTitle;
+    font-weight: 600;
+  }
+
+  h2 {
+    color: $color000;
+    font-size: $title;
+    font-weight: 700;
+  }
+
+  div {
+    @include flex(row, center, center, 1rem);
+    button {
+      font-size: $title;
+      color: $color200;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+    }
+  }
+}
+
+.about {
+  @include size(100%, 50vh, 15%);
+  @include flex(column, center, center, 10px);
+  background-color: $color400;
+  h1 {
+    color: $color000;
+    font-size: $bigParagraph;
+    font-weight: 500;
+    text-align: justify;
+
+    &:nth-child(2) {
+      width: 100%;
+      text-align: left;
+      color: $color100;
+    }
+  }
+
+  .row {
+    @include size(100%, 100%, 0);
+    @include flex(row, space-between, center, 10px);
+    margin-top: 10px;
+    div {
+      width: 100%;
+      border-bottom: 2px solid $color100;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.skill {
+  @include size(100%, 100vh, 5% 15%);
+  @include flex(column, flex-start, center, 10px);
+  background-color: $color300;
+
+  .top {
+    @include flex(column, flex-start, flex-start, 10px);
+    width: 100%;
+
+    h1 {
+      @include title($color000, $title, 800);
+    }
+
+    div {
+      @include flex(row, center, center, 1rem);
+      button {
+        font-size: $bigParagraph;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      .active {
+        color: $color100;
+      }
+      .non_active {
+        color: $color200;
+      }
+    }
+  }
+}
+
+.project {
+  @include size(100%, 100vh, 5% 15%);
+  @include flex(column, flex-start, center, 10px);
+  background-color: $color300;
+
+  .top {
+    @include flex(column, flex-start, flex-start, 10px);
+    width: 100%;
+
+    h1 {
+      @include title($color000, $title, 800);
+    }
+
+    div {
+      @include flex(row, center, center, 1rem);
+      button {
+        font-size: $bigParagraph;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      .active {
+        color: $color100;
+      }
+      .non_active {
+        color: $color200;
+      }
+    }
+  }
+
+  .content {
+    @include size(100%, 100%, 0);
+    // @include grid(500px, 1fr, 1rem);
+    @include flex(column, flex-start, flex-start, 1rem);
+  }
+
+  .bottom {
+    @include size(100%, 30px, 0);
+    @include flex(row, center, center, 10px);
+
+    .pagination_active {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: $color100;
+      border: 3px solid $color200;
+      font-size: 0;
+    }
+
+    .pagination_non_active {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 3px solid $color200;
+      font-size: 0;
+    }
+  }
+}
+
+.footer {
+  @include size(100%, 1vh, 2%);
+  @include flex(column, center, center, 10px);
+  background-color: $color300;
+  color: $color000;
+}
+
+// components
+.card_project {
+  @include size(100%, 200px, 10px 0);
+  @include flex(row, flex-start, flex-start, 1rem);
+  border-bottom: 2px solid $color200;
+  .images {
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  figcaption {
+    width: 100%;
+    height: 100%;
+    @include flex(column, space-between, flex-start, 1rem);
+
+    h1 {
+      color: $color100;
+      font-size: $bigParagraph;
+    }
+    h3 {
+      color: $color200;
+      font-size: $paragraph;
+    }
+    p {
+      font-size: $paragraph;
+      color: $color000;
+    }
+    .container {
+      width: 100%;
+      @include flex(row, space-between, flex-start, 10px);
+      .item_icon {
+        width: 100%;
+      }
+      .row {
+        @include flex(row, flex-start, flex-start, 10px);
+        span {
+          font-size: $subTitle;
+        }
+      }
+    }
+  }
+}
+
+// icon Color
+.tailwind {
+  color: #7dd3fc;
+}
+.github {
+  color: #f0f6fc;
+  cursor: pointer;
+}
+.reactJs {
+  color: #61dafb;
+}
+.nextJs {
+  color: #fff;
+}
+.sass {
+  color: #cd6799;
+}
+.mapbox {
+  color: #4264fb;
+}
+.styled_component {
+  color: #fb8d1a;
+}
+.firefox {
+  color: #80ebff;
+  cursor: pointer;
+}
+.axios {
+  color: #671ddf;
+}
+.redux {
+  color: #ba8fff;
+}
+.framer_motion {
+  color: #ffffff;
+}
+.react_query {
+  color: #ea580c;
+}
