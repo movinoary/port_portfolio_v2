@@ -7,14 +7,14 @@ const About = () => {
   return (
     <section className="about" id="about">
       <h1>
-        "Seorang Junior Web Developer yang bekerja sebagai Frontend Developer.
-        Saya lulusan dari Bootcamp Fullstack Developer di dumbways.id. Saya
-        sudah 7 tahun lebih banyak belajar di dunia IT dari hardware dan
-        software. Dikerjaan saya sebelumnya saya mudah untuk menyesuaikan diri
-        dengan code yang ada, dan bisa dibilang cepat mengerjakan pekerjaan yang
-        diberikan ke saya. Semoga kemampuan yang saya punya cukup untuk terjun
-        lebih jauh ke dunia kerja, saya siap untuk mempelajari hal baru
-        lainnya."
+        "Perkenalkan saya adalah Junior Web Developer yang sedang mencari
+        pekerjaan baru sebagai Web developer di bilang apapun. Saya lulusan
+        Bootcamp Fullstack Developer di dumbways.id. Saya sudah 7 tahun lebih
+        banyak belajar di dunia IT dari hardware dan software. Dalam pekerjaan
+        sebelumnya, saya mudah untuk menyesuaikan diri dengan code yang ada, dan
+        bisa dibilang cepat mengerjakan pekerjaan yang diberikan ke saya. Semoga
+        kemampuan saya ini, dapat lebih jauh untuk terjun dibidang IT dan dapat
+        belajar hal-hal baru di bidang ini.""
       </h1>
       <section className="content">
         <div>

@@ -70,7 +70,7 @@ export const list_project = [
     title: "Kopi Dimedja",
     category: "web",
     techology: ["nextJs", "scss"],
-    desc: "Coffee shop landing pages",
+    desc: " ",
     photo: Kopi_Dimedja,
     linkWeb: "https://coffe-shop-kopi-dimedja.vercel.app/",
     linkGit: "https://github.com/movinoary/Port_kopi_dimedja",
@@ -80,7 +80,7 @@ export const list_project = [
     title: "Voffe",
     category: "web",
     techology: ["nextJs", "scss"],
-    desc: "Coffee shop landing pages",
+    desc: " ",
     photo: Voffe,
     linkWeb: "https://voffe-darkbrown.vercel.app/",
     linkGit: "https://github.com/movinoary/Port_coffe_darkbrown",
@@ -167,13 +167,13 @@ export const list_project = [
   },
   {
     id: 14,
-    title: "Vape Storage",
+    title: "Kasir",
     techology: [],
     category: "ui desain",
     desc: "",
     photo: UiVape,
     linkWeb:
-      "https://www.figma.com/proto/E5V3nsNndKNaN2CPtlC2kQ/GATAU?page-id=32%3A2913&type=design&node-id=32-2914&viewport=718%2C496%2C0.13&t=40tyA8FoYFBC2kBO-1&scaling=min-zoom&starting-point-node-id=32%3A2914",
+      "https://www.figma.com/proto/E5V3nsNndKNaN2CPtlC2kQ/KASIR?page-id=0%3A1&type=design&node-id=84-3&viewport=-410%2C-21%2C0.11&t=qs2TLUmKHTsTBAE8-1&scaling=min-zoom&starting-point-node-id=84%3A1220&mode=design",
     linkGit: "",
   },
 ];
