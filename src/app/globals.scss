@@ -91,7 +91,7 @@
 }
 
 .about {
-  @include size(100%, 80vh, 15%);
+  @include size(100%, 100%, 15%);
   @include flex(column, center, center, 10px);
   background-color: $color400;
   h1 {
@@ -149,7 +149,7 @@
 }
 
 .skill {
-  @include size(100%, 100vh, 5% 15%);
+  @include size(100%, 100%, 5% 15%);
   @include flex(column, flex-start, center, 10px);
   background-color: $color300;
 
@@ -180,7 +180,7 @@
 }
 
 .project {
-  @include size(100%, 100vh, 5% 15%);
+  @include size(100%, 100%, 5% 15%);
   @include flex(column, flex-start, center, 10px);
   background-color: $color300;
 
@@ -212,7 +212,7 @@
 
   .content {
     @include size(100%, 100%, 0);
-    // @include grid(500px, 1fr, 1rem);
+    min-height: 66vh;
     @include flex(column, flex-start, flex-start, 1rem);
   }
 
@@ -386,4 +386,87 @@
 }
 .typescript {
   color: #007acc;
+}
+.vueJs {
+  color: #42b883;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1030px) {
+  .nav {
+    @include size(100%, 10vh, 1rem 2rem);
+    background-color: $color300;
+    z-index: 999;
+  }
+
+  .header {
+    @include size(100%, 100vh, 10%);
+    p {
+      font-size: $paragraph;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: $subTitle;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: $bigParagraph;
+      text-align: center;
+    }
+  }
+
+  .about {
+    @include size(100%, 100%, 10%);
+    h1 {
+      font-size: $paragraph;
+    }
+
+    .content {
+      flex-wrap: wrap;
+    }
+  }
+
+  .card_project {
+    @include size(100%, 100%, 10px 0);
+    @include flex(column, flex-start, flex-start, 1rem);
+    border-bottom: 2px solid $color200;
+    .images {
+      width: 100%;
+      height: 170px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    figcaption {
+      width: 100%;
+      height: 100%;
+      @include flex(column, space-between, flex-start, 1rem);
+
+      h1 {
+        color: $color100;
+        font-size: $bigParagraph;
+      }
+      h3 {
+        color: $color200;
+        font-size: $paragraph;
+      }
+      p {
+        font-size: $paragraph;
+        color: $color000;
+      }
+      .container {
+        width: 100%;
+        @include flex(row, space-between, flex-start, 10px);
+        .item_icon {
+          width: 100%;
+        }
+        .row {
+          @include flex(row, flex-start, flex-start, 10px);
+          span {
+            font-size: $subTitle;
+          }
+        }
+      }
+    }
+  }
 }

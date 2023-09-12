@@ -1,3 +1,4 @@
+import pasir from "../../public/project/pasir.png";
 import Dago_Kopedia from "../../public/project/1.Dago_Kopedia.png";
 import SMA_Bandung from "../../public/project/2.SMA_Bandung.png";
 import Redesain_GEO_MAPID from "../../public/project/3.Redesain_GEO_MAPID.png";
@@ -16,6 +17,26 @@ import UiVape from "../../public/project/15.Vape_Storage.png";
 
 export const list_project = [
   {
+    id: 124,
+    title: "Pasir",
+    category: "web",
+    techology: ["nextJs", "scss", "axios"],
+    desc: "",
+    photo: pasir,
+    linkWeb: "https://fe-pasir.vercel.app/",
+    linkGit: "https://github.com/movinoary",
+  },
+  {
+    id: 123,
+    title: "Kopi dimedja",
+    category: "web",
+    techology: ["reactJs", "scss", "axios"],
+    desc: "",
+    photo: Kopi_Dimedja,
+    linkWeb: "https://kopi-dimedja.netlify.app/",
+    linkGit: "https://github.com/movinoary",
+  },
+  {
     id: 1,
     title: "Dago Kopedia",
     category: "web",
@@ -26,16 +47,6 @@ export const list_project = [
     linkGit: "https://github.com/movinoary/-Projek-Coffe_Map",
   },
   {
-    id: 2,
-    title: "SMA Bandung",
-    category: "web",
-    techology: ["reactJs", "tailwind", "axios", "mapbox"],
-    desc: "",
-    photo: SMA_Bandung,
-    linkWeb: "https://map-sma-bandung.netlify.app/",
-    linkGit: "https://github.com/movinoary/Port_map_sma_bandung",
-  },
-  {
     id: 3,
     title: "Redesain GEO.MAPID",
     category: "web",
@@ -44,6 +55,16 @@ export const list_project = [
     photo: Redesain_GEO_MAPID,
     linkWeb: "https://redesain-geo.netlify.app/",
     linkGit: "https://github.com/movinoary/Port_Redesign_Geo",
+  },
+  {
+    id: 8,
+    title: "Sekolah Dasar",
+    category: "web",
+    techology: ["reactJs", "scss", "axios", "framer-motion", "react-query"],
+    desc: "",
+    photo: Sekolah_Dasar,
+    linkWeb: "https://port-sd.netlify.app/",
+    linkGit: "https://github.com/movinoary/Port-SD-1C",
   },
   {
     id: 4,
@@ -65,16 +86,16 @@ export const list_project = [
     linkWeb: "https://dashboard-vowallet.netlify.app/",
     linkGit: "https://github.com/movinoary/Port_Wallet_Dashboard",
   },
-  {
-    id: 6,
-    title: "Kopi Dimedja",
-    category: "web",
-    techology: ["nextJs", "scss"],
-    desc: " ",
-    photo: Kopi_Dimedja,
-    linkWeb: "https://coffe-shop-kopi-dimedja.vercel.app/",
-    linkGit: "https://github.com/movinoary/Port_kopi_dimedja",
-  },
+  // {
+  //   id: 6,
+  //   title: "Kopi Dimedja",
+  //   category: "web",
+  //   techology: ["nextJs", "scss"],
+  //   desc: " ",
+  //   photo: Kopi_Dimedja,
+  //   linkWeb: "https://coffe-shop-kopi-dimedja.vercel.app/",
+  //   linkGit: "https://github.com/movinoary/Port_kopi_dimedja",
+  // },
   {
     id: 7,
     title: "Voffe",
@@ -86,14 +107,14 @@ export const list_project = [
     linkGit: "https://github.com/movinoary/Port_coffe_darkbrown",
   },
   {
-    id: 8,
-    title: "Sekolah Dasar",
+    id: 2,
+    title: "SMA Bandung",
     category: "web",
-    techology: ["reactJs", "scss", "axios", "framer-motion", "react-query"],
+    techology: ["reactJs", "tailwind", "axios", "mapbox"],
     desc: "",
-    photo: Sekolah_Dasar,
-    linkWeb: "https://port-sd.netlify.app/",
-    linkGit: "https://github.com/movinoary/Port-SD-1C",
+    photo: SMA_Bandung,
+    linkWeb: "https://map-sma-bandung.netlify.app/",
+    linkGit: "https://github.com/movinoary/Port_map_sma_bandung",
   },
   {
     id: 9,

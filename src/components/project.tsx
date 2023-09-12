@@ -42,8 +42,8 @@ const Project = () => {
     </button>
   );
 
-  const renderContent = currentPosts.map((item) => (
-    <figure className="card_project">
+  const renderContent = currentPosts.map((item, index) => (
+    <figure className="card_project" key={index}>
       <div className="images">
         <Image
           src={item.photo}
@@ -114,45 +114,45 @@ const Project = () => {
             <div className="item_icon">
               <h3>Techology</h3>
               <div className="row">
-                {item?.techology?.map((t) =>
+                {item?.techology?.map((t, index) =>
                   t === "reactJs" ? (
-                    <span className="reactJs">
+                    <span className="reactJs" key={index}>
                       <FaIcons.FaReact />
                     </span>
                   ) : t === "tailwind" ? (
-                    <span className="tailwind">
+                    <span className="tailwind" key={index}>
                       <SiIcons.SiTailwindcss />
                     </span>
                   ) : t === "styled component" ? (
-                    <span className="styled_component">
+                    <span className="styled_component" key={index}>
                       <SiIcons.SiStyledcomponents />
                     </span>
                   ) : t === "nextJs" ? (
-                    <span className="nextJs">
+                    <span className="nextJs" key={index}>
                       <TbIcons.TbBrandNextjs />
                     </span>
                   ) : t === "scss" ? (
-                    <span className="sass">
+                    <span className="sass" key={index}>
                       <SiIcons.SiSass />
                     </span>
                   ) : t === "mapbox" ? (
-                    <span className="mapbox">
+                    <span className="mapbox" key={index}>
                       <SiIcons.SiMapbox />
                     </span>
                   ) : t === "axios" ? (
-                    <span className="axios">
+                    <span className="axios" key={index}>
                       <SiIcons.SiAxios />
                     </span>
                   ) : t === "redux" ? (
-                    <span className="redux">
+                    <span className="redux" key={index}>
                       <SiIcons.SiRedux />
                     </span>
                   ) : t === "framer-motion" ? (
-                    <span className="framer_motion">
+                    <span className="framer_motion" key={index}>
                       <SiIcons.SiFramer />
                     </span>
                   ) : t === "react-query" ? (
-                    <span className="react_query">
+                    <span className="react_query" key={index}>
                       <SiIcons.SiReactquery />
                     </span>
                   ) : null
