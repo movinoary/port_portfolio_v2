@@ -7,15 +7,14 @@ const About = () => {
   return (
     <section className="about" id="about">
       <h1>
-        "Saya adalah seorang Junior Web Developer yang tengah mencari peluang
-        baru sebagai Web Developer di berbagai bidang. Saya telah menyelesaikan
-        Bootcamp Fullstack Developer di dumbways.id dan memiliki pengalaman
-        belajar di dunia IT selama lebih dari 7 tahun, yang mencakup aspek
-        hardware dan software. Dalam pengalaman kerja sebelumnya, saya memiliki
-        kemampuan adaptasi yang baik terhadap kode yang ada dan dapat
-        menyelesaikan tugas dengan cepat. Saya sangat bersemangat untuk
-        mengembangkan kemampuan saya di bidang IT dan terus belajar hal-hal baru
-        dalam industri ini."
+        "I am a Junior Web Developer who is looking for new opportunities as a
+        Web Developer in various fields. I have completed the Fullstack
+        Developer Bootcamp at dumbways.id and have more than 7 years of
+        experience learning in the IT world, covering both hardware and software
+        aspects. In my previous work experience, I have good adaptability to
+        existing code and can complete tasks quickly. I am very excited to
+        develop my skills in the IT field and continue to learn new things in
+        this industry."
       </h1>
       <section className="content">
         <div>
@@ -100,9 +99,19 @@ const About = () => {
         <div>
           <h1>Backend</h1>
           <div className="row">
+            <p className="python">
+              <FaIcons.FaPython />
+              <span>Python</span>
+            </p>
             <p className="nodeJS">
               <FaIcons.FaNodeJs />
               <span>Node JS</span>
+            </p>
+          </div>
+          <div className="row">
+            <p className="nextJs">
+              <SiIcons.SiFlask />
+              <span>Flask</span>
             </p>
             <p className="express">
               <SiIcons.SiExpress />
@@ -136,6 +145,20 @@ const About = () => {
         </div>
         <div>
           <h1>Lainnya</h1>
+          <div className="row">
+            <p className="windows">
+              <TbIcons.TbApi />
+              <span>RestAPI</span>
+            </p>
+            <p className="graphql">
+              <SiIcons.SiGraphql />
+              <span>graphQL</span>
+            </p>
+            <p className="gRPC">
+              <h2>gRPC</h2>
+              <span>gRPC</span>
+            </p>
+          </div>
           <div className="row">
             <p className="windows">
               <SiIcons.SiWindows11 />
@@ -176,6 +199,96 @@ const About = () => {
           </div>
         </div>
       </section>
+      <div className="content">
+        <div>
+          <div>
+            <h1>Frontend Developer</h1>
+            <h3>MAPID | 2022 - 2023 </h3>
+            <p className="text">
+              - Migrating the old version of ReactJS to the new version,
+              according to the needs of the Geo Mapid web, Mapid Forms and Admin
+              Dashboard.
+            </p>
+            <p className="text">
+              -Changed file code from ±3000 lines to ±1000 lines
+            </p>
+            <p className="text">
+              -Fully responsible for the GIS Developer section
+            </p>
+            <p className="text">
+              -Geojson CRUD data on point, line and polygon map data types.
+            </p>
+            <p className="text">
+              - Explains GEOProcessor features such as Isochrone, Heatmap, point
+              drag, and Buffer.Describes the SINI mapid feature for the purposes
+              of feature redesign, downloading and data display.
+            </p>
+            <p className="text">- Code the necessary documentation.</p>
+            <p className="text">
+              - Create a sidebar design display with figma.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="content">
+        <div>
+          <div>
+            <h1>FullStack Developer</h1>
+            <h3>ADS Center | 2022 </h3>
+            <p className="text">
+              - Creating a School Web. front-end using ReactJS, SCSS for css
+              Framework.
+            </p>
+            <p className="text">
+              - Back-End uses NodeJs, Seuqlize and mySql for databases.
+            </p>
+          </div>
+          <div>
+            <h3>LNSW | 2024 - now </h3>
+            <p className="text">
+              - Create API for the needs of connecting between KLs that work
+              with the company.
+            </p>
+            <p className="text">
+              - Create API functions for lartas implemented in the Smart Engine
+              system.
+            </p>
+            <p className="text">
+              - Develop the LNSW SSO system on the Frontend and Backend.
+            </p>
+            <p className="text">- Implement Geotaging on SSO Registration.</p>
+          </div>
+        </div>
+      </div>
+      <div className="content">
+        <div>
+          <div>
+            <h1>System Analysis</h1>
+            <h3>LNSW | 2024 - now</h3>
+            <p className="text">
+              - Responsible for overseeing 5 application modules that support
+              the efficient operation of SEZ systems.
+            </p>
+            <p className="text">
+              - Designed adaptive systems to accommodate evolving business and
+              technical requirements.
+            </p>
+            <p className="text">
+              - Acted as a key communicator between business teams, IT teams,
+              and vendors, ensuring smooth collaboration and optimal outcomes.
+            </p>
+            <p className="text">
+              - Monitored system development progress through to the testing
+              phase, ensuring quality and functionality of each module.
+            </p>
+            <p className="text">
+              - Developed comprehensive documentation for all application
+              modules, including prior system design structures, to ensure
+              transparency and support future development.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

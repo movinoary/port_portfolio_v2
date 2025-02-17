@@ -13,7 +13,7 @@ const Nav = () => {
     <nav className="nav">
       <h1 onClick={() => navigate("#home")}>VO</h1>
       <div>
-        <button onClick={() => navigate("#about")}>tentang</button>
+        <button onClick={() => navigate("#about")}>About</button>
         <button onClick={() => navigate("#project")}>Projects</button>
         <button
           onClick={() => navigate("https://v1-portfolio-vo.netlify.app/")}

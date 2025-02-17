@@ -9,6 +9,10 @@
   scroll-behavior: smooth;
 }
 
+body {
+  background: $color400;
+}
+
 ::-webkit-scrollbar {
   width: 17px;
   z-index: 1;
@@ -111,6 +115,18 @@
         border-bottom: 2px solid $color100;
         text-align: center;
         margin-bottom: 1rem;
+      }
+      h3 {
+        color: $color200;
+        margin: 0.5rem 0;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      .text {
+        font-size: 1rem;
+        color: $color000;
       }
     }
     .row {
@@ -389,6 +405,19 @@
 }
 .vueJs {
   color: #42b883;
+}
+.python {
+  color: #4584b6;
+}
+.graphql {
+  color: #f4447c;
+}
+.gRPC {
+  color: #ffffff;
+  h2 {
+    font-size: 1rem;
+    cursor: default;
+  }
 }
 
 @media only screen and (min-width: 0px) and (max-width: 1030px) {

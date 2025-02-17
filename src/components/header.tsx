@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = () => {
   return (
     <section className="header" id="home">
-      <p>Hai,</p>
+      <p>Hi,</p>
       <h1>Mohammad Vino Arystio</h1>
       <h2>Frontend Developer</h2>
       <div>
