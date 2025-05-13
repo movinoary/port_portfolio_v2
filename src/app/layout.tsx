@@ -12,6 +12,9 @@ export const metadata: Metadata = {
     "Portofolio",
     "Developer",
   ],
+  verification: {
+    google: "0LKRGk5uve0hPUt0HRXUYe587RWoUvCGAaDawi1g0yw",
+  },
   openGraph: {
     title: "Portofolio Vino Arystio",
     description: "Portofolio Mohammad Vino Arystio - Developer & Designer",

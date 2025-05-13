@@ -234,7 +234,7 @@ const About = () => {
         <div>
           <div>
             <h1>FullStack Developer</h1>
-            <h3>ADS Center | 2022 </h3>
+            <h3>ADS Center | 2021 - 2022 </h3>
             <p className="text">
               - Creating a School Web. front-end using ReactJS, SCSS for css
               Framework.
@@ -267,7 +267,7 @@ const About = () => {
             <h3>LNSW | 2024 - now</h3>
             <p className="text">
               - Responsible for overseeing 5 application modules that support
-              the efficient operation of SEZ systems.
+              the efficient operation of SEZ systems (KEK).
             </p>
             <p className="text">
               - Designed adaptive systems to accommodate evolving business and

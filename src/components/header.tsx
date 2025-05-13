@@ -6,7 +6,7 @@ const Header = () => {
     <section className="header" id="home">
       <p>Hi,</p>
       <h1>Mohammad Vino Arystio</h1>
-      <h2>Frontend Developer</h2>
+      <h2>Web Developer</h2>
       <div>
         <Link
           href="https://github.com/movinoary"
