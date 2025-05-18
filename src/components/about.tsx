@@ -144,7 +144,7 @@ const About = () => {
           </div>
         </div>
         <div>
-          <h1>Lainnya</h1>
+          <h1>Other</h1>
           <div className="row">
             <p className="windows">
               <TbIcons.TbApi />
@@ -153,10 +153,6 @@ const About = () => {
             <p className="graphql">
               <SiIcons.SiGraphql />
               <span>graphQL</span>
-            </p>
-            <p className="gRPC">
-              <h2>gRPC</h2>
-              <span>gRPC</span>
             </p>
           </div>
           <div className="row">

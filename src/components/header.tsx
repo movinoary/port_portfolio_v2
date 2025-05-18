@@ -14,7 +14,7 @@ const Header = () => {
           rel="noreferrer"
         >
           <button>
-            <AiIcons.AiFillGithub />
+            <AiIcons.AiFillGithub className="github" />
           </button>
         </Link>
         <Link
@@ -23,7 +23,7 @@ const Header = () => {
           rel="noreferrer"
         >
           <button>
-            <AiIcons.AiOutlineGoogle />
+            <AiIcons.AiOutlineGoogle className="google" />
           </button>
         </Link>
         <Link
@@ -32,7 +32,7 @@ const Header = () => {
           rel="noreferrer"
         >
           <button>
-            <AiIcons.AiOutlineWhatsApp />
+            <AiIcons.AiOutlineWhatsApp className="whatsapp" />
           </button>
         </Link>
         <Link
@@ -41,7 +41,16 @@ const Header = () => {
           rel="noreferrer"
         >
           <button>
-            <AiIcons.AiFillLinkedin />
+            <AiIcons.AiFillLinkedin className="linkedin" />
+          </button>
+        </Link>
+        <Link
+          href="https://vinoarystio.medium.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <button>
+            <AiIcons.AiFillMediumCircle className="github" />
           </button>
         </Link>
       </div>

@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { list_project } from "@/data/project";
 import Image from "next/image";
 import * as FaIcons from "react-icons/fa";
@@ -13,6 +13,7 @@ interface valueButton {
 
 const Project = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [progress, setProgress] = useState(1);
   const [category, setCategory] = useState("web");
   const data = list_project;
   const dataFilter = data.filter((d) => d.category === category);
@@ -27,6 +28,26 @@ const Project = () => {
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
     pages.push(i);
   }
+
+  useEffect(() => {
+    setInterval(() => {
+      if (currentPage === pages.length) {
+        setCurrentPage(1);
+      } else {
+        setCurrentPage(currentPage + 1);
+      }
+    }, 10000);
+  }, [currentPage]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      if (progress === 4) {
+        setProgress(1);
+      } else {
+        setProgress(progress + 1);
+      }
+    }, 2500);
+  }, [currentPage, progress]);
 
   const addPage = (number: number) => setCurrentPage(number);
 
@@ -171,10 +192,25 @@ const Project = () => {
         <h1>Project</h1>
         <div>
           <ButtonCategory title="web" />
-          <ButtonCategory title="ui desain" />
+          {/* <ButtonCategory title="ui desain" /> */}
         </div>
       </header>
       <div className="content">{renderContent}</div>
+      <div className="loader">
+        <div
+          className={`${
+            progress === 1
+              ? "satu"
+              : progress === 2
+              ? "dua"
+              : progress === 3
+              ? "tiga"
+              : progress === 4
+              ? "empat"
+              : null
+          }`}
+        />
+      </div>
       <footer className="bottom">
         {pages.map((number, index) => (
           <button
