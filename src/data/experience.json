@@ -1,0 +1,93 @@
+[
+  {
+    "period": "Agustus 2023 - Now",
+    "category": "work",
+    "company": "LNSW",
+    "title": "System Analyst",
+    "summary": "As a System Analyst, I was responsible for ensuring the successful operation, development, and alignment of multiple application modules within the Special Economic Zone (SEZ) ecosystem.",
+    "responsibilities": [
+      "1. Oversaw the development and functionality of the SEZ application ecosystem on the SINSW platform, which plays a critical role in supporting operations across SEZ areas throughout Indonesia.",
+      "2. Designed and implemented systems required by the business team, ensuring compliance with government regulations.",
+      "3. Acted as the primary liaison between business stakeholders, internal IT teams, and external vendors to maintain alignment and foster effective collaboration.",
+      "4. Closely monitored the entire development lifecycle from planning to testing, ensuring that each module met quality and performance standards.",
+      "5. Produced detailed and structured system documentation, including legacy designs and new architecture, to support transparency and sustainable scalability."
+    ]
+  },
+  {
+    "period": "October 2023 - Now",
+    "category": "work",
+    "company": "LNSW",
+    "title": "Fullstack Developer",
+    "summary": "Played a key role in developing API integrations and authentication systems to support inter-agency collaboration and digital services within government-related platforms.",
+    "responsibilities": [
+      "1. Developed robust RESTful APIs to facilitate secure data exchange between government institutions (KLs) and the company’s systems.",
+      "2. Created specific API functions for “lartas” (restricted/prohibited goods) to be integrated within the Smart Engine system, ensuring compliance with regulatory frameworks.",
+      "3. Built both frontend and backend components of the LNSW Single Sign-On (SSO) system, enabling seamless authentication across multiple services.",
+      "4. Implemented Geotagging functionality in the SSO registration process to improve data accuracy and user verification."
+    ]
+  },
+  {
+    "period": "Agustus 2022 - Agustus 2023",
+    "category": "work",
+    "company": "MAPID",
+    "title": "Frontend Developer",
+    "summary": "As a Frontend Developer in the WebGIS modernization initiative, I played a key role in improving the user interface and performance of Mapid's core platforms—including Geo Mapid, Mapid Forms, and the Admin Dashboard—by implementing a clean, scalable, and modern frontend architecture.",
+    "responsibilities": [
+      "1. Successfully migrated legacy ReactJS code to the latest version, aligning with platform requirements and performance objectives.",
+      "2. Refactored approximately 3,000 lines of legacy code into a modular structure of around 1,000 lines by splitting them into reusable components—significantly improving code readability, maintainability, and development speed.",
+      "3. Enhanced core WebGIS functionality by implementing complete GeoJSON CRUD support for point, line, and polygon data types.",
+      "4. Built and optimized advanced geospatial features including Isochrone, Heatmap, point dragging, and buffer tools.",
+      "5. Created clear and structured documentation for the code I developed, enabling smoother handovers for future developers."
+    ]
+  },
+  {
+    "period": "Februari - April 2025",
+    "category": "freelance",
+    "company": "UNTAR",
+    "title": "Juri I/O Festival 2025",
+    "summary": "As a mentor for a WebGIS development project, I played a key role in guiding the team and ensuring smooth project execution through the following responsibilities:",
+    "responsibilities": [
+      "1. Conducted regular meetings to track team progress, identified both technical and non-technical obstacles, and provided practical solutions to overcome them.",
+      "2. Advised the team throughout the WebGIS development process and offered strategic direction to maintain focus on project priorities and core themes aligned with the initial proposal.",
+      "3. Reviewed and evaluated the final project outcomes to ensure alignment with objectives and provided constructive feedback to improve overall team performance."
+    ]
+  },
+  {
+    "period": "Februari - April 2025",
+    "category": "freelance",
+    "company": "MAPID",
+    "title": "Mentor Web GIS Competition",
+    "summary": "As a mentor for a WebGIS development project, I played a key role in guiding the team and ensuring smooth project execution through the following responsibilities:",
+    "responsibilities": [
+      "1. Conducted regular meetings to track team progress, identified both technical and non-technical obstacles, and provided practical solutions to overcome them.",
+      "2. Advised the team throughout the WebGIS development process and offered strategic direction to maintain focus on project priorities and core themes aligned with the initial proposal.",
+      "3. Reviewed and evaluated the final project outcomes to ensure alignment with objectives and provided constructive feedback to improve overall team performance."
+    ]
+  },
+  {
+    "period": "Agustus 2021 - Agustus 2022",
+    "category": "freelance",
+    "company": "ADS Center",
+    "title": "IT Support",
+    "summary": "Contributed to digital infrastructure and web development projects for several elementary schools in Bekasi, focusing on both network setup and full-stack web application development.",
+    "responsibilities": [
+      "1. Designed and deployed Local Area Networks (LAN) to support internet and intranet connectivity across multiple school buildings.",
+      "2. Developed a responsive and user-friendly School Website, using ReactJS and SCSS for the frontend interface.",
+      "3. Built the backend with Node.js, Sequelize, and MySQL, implementing essential features such as authentication, data management, and content updates.",
+      "4. Ensured smooth integration between frontend and backend services, optimized for performance and maintainability."
+    ]
+  },
+  {
+    "period": "November 2017 - Januari 2018",
+    "category": "freelance",
+    "company": "APJII",
+    "title": "NOC (Network Operating Center)",
+    "summary": "As a Network Operations Center (NOC) intern, I supported the day-to-day operations of the data center by assisting with physical infrastructure maintenance, access management, and network hardware handling.",
+    "responsibilities": [
+      "1. Assisted in maintaining data center integrity by managing tenant entry permits and overseeing the intake of new network devices.",
+      "2. Participated in the installation and interconnection of network infrastructure, including UTP and fiber optic cabling.",
+      "3. Gained hands-on experience in structured cabling, physical network setup, and basic network operations.",
+      "4. Ensured compliance with standard operating procedures related to physical access and equipment installation."
+    ]
+  }
+]

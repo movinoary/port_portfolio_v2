@@ -6,6 +6,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+}
+
+html {
   scroll-behavior: smooth;
 }
 
@@ -40,19 +43,33 @@ body {
 
 .nav {
   position: fixed;
-  @include size(100%, 10vh, 1.5rem 3rem);
+  @include size(100%, 10vh, 1.5rem 1.5rem);
   @include flex(row, space-between, center, 10px);
-  h1 {
-    @include title($color100, $title, 800);
-    cursor: pointer;
+  * {
+    transition: $medium;
   }
   div {
+    @include size(100%, 100%, 1.5rem 1.5rem);
     @include flex(row, center, center, 1rem);
-    button {
-      font-size: $paragraph;
-      color: $color100;
-      background-color: transparent;
-      border: none;
+    h1 {
+      @include title($color100, $title, 800);
+      cursor: pointer;
+    }
+  }
+}
+
+.nav-scroll {
+  position: fixed;
+  @include size(100%, 10vh, 1.5rem 1.5rem);
+  @include flex(row, space-between, center, 10px);
+  * {
+    transition: $medium;
+  }
+  div {
+    @include size(230px, 50%, 3rem);
+    @include flex(row, center, center, 1rem);
+    h1 {
+      @include title($color100, $title, 800);
       cursor: pointer;
     }
   }
@@ -112,28 +129,9 @@ body {
 
   .content {
     @include size(100%, 100%, 0);
-    @include flex(row, space-between, flex-start, 10px);
+    @include flex(column, space-between, flex-start, 2rem);
     margin-top: 10px;
-    div {
-      width: 100%;
-      h1 {
-        border-bottom: 2px solid $color100;
-        text-align: center;
-        margin-bottom: 1rem;
-      }
-      h3 {
-        color: $color200;
-        margin: 0.5rem 0;
-      }
-      div {
-        display: flex;
-        flex-direction: column;
-      }
-      .text {
-        font-size: 1rem;
-        color: $color000;
-      }
-    }
+
     .row {
       width: 100%;
       margin-bottom: 1rem;
@@ -166,6 +164,36 @@ body {
         }
       }
     }
+  }
+}
+
+.experience {
+  @include size(100%, 100%, 15%);
+  @include flex(row, center, center, 1rem);
+  background-color: $color300;
+
+  .title {
+    position: sticky;
+    top: 5rem;
+    width: 30%;
+    height: fit-content;
+    align-self: flex-start;
+
+    p {
+      color: $color100;
+      font-size: $subTitle;
+      font-weight: 600;
+    }
+
+    h1 {
+      color: $color000;
+      font-size: $bigTitle;
+      font-weight: 600;
+    }
+  }
+
+  .content {
+    width: 70%;
   }
 }
 
@@ -203,7 +231,7 @@ body {
 .project {
   @include size(100%, 100%, 5% 15%);
   @include flex(column, flex-start, center, 10px);
-  background-color: $color300;
+  background-color: $color400;
 
   .top {
     @include flex(column, flex-start, flex-start, 10px);
@@ -263,7 +291,7 @@ body {
 
 .footer {
   @include size(100%, 1vh, 2%);
-  @include flex(column, center, center, 10px);
+  @include flex(row, center, center, 10px);
   background-color: $color300;
   color: $color000;
 }
@@ -309,6 +337,86 @@ body {
         }
       }
     }
+  }
+}
+
+.card-navigation {
+  font-size: $paragraph;
+  color: $color100;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.card_experience {
+  border-top: 1px solid $color100;
+  border-bottom: 1px solid $color100;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  .year {
+    color: $color000;
+    font-size: $bigParagraph;
+    font-weight: 500;
+  }
+
+  .office {
+    color: $color100;
+    font-size: $title;
+    font-weight: 600;
+  }
+
+  .position {
+    color: $color000;
+    font-size: $bigParagraph;
+    font-weight: 500;
+  }
+
+  .desc {
+    color: $color000;
+    font-size: $paragraph;
+    font-weight: 300;
+    margin-top: -0.5rem;
+    text-align: justify;
+  }
+}
+
+.card-technologi {
+  width: 100%;
+
+  h1 {
+    width: 300px;
+    text-transform: capitalize;
+    border-bottom: 2px solid $color100;
+    text-align: left;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    color: $color200;
+    margin: 0.5rem 0;
+  }
+  .text {
+    font-size: 1rem;
+    color: $color000;
+  }
+}
+
+.card-icon {
+  @include flex(row, center, center, 10px);
+  width: 100%;
+  font-size: $title;
+  position: relative;
+
+  * {
+    transition: $fast;
+  }
+  span {
+    font-size: 1rem;
   }
 }
 

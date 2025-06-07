@@ -1,7 +1,7 @@
-import Footer from "@/components/footer";
+import Footer from "@/layout/footer";
 import "./globals.scss";
 import type { Metadata } from "next";
-import Nav from "@/components/nav";
+import Nav from "@/layout/nav";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://portfolio-vo.vercel.app/"),
