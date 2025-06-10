@@ -60,7 +60,7 @@ const Header = () => {
 
   return (
     <section className="header" id="home" ref={containerRef}>
-      <p>Hi,i am</p>
+      <p>Hi, i am</p>
       <h1>Mohammad Vino Arystio</h1>
       <h2>
         <AnimatePresence mode="wait" initial={false}>
