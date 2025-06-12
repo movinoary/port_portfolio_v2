@@ -42,6 +42,7 @@ body {
 }
 
 .nav {
+  z-index: 999;
   position: fixed;
   @include size(100%, 10vh, 1.5rem 1.5rem);
   @include flex(row, space-between, center, 10px);
@@ -59,6 +60,7 @@ body {
 }
 
 .nav-scroll {
+  z-index: 999;
   position: fixed;
   @include size(100%, 10vh, 1.5rem 1.5rem);
   @include flex(row, space-between, center, 10px);
@@ -174,7 +176,7 @@ body {
 
   .title {
     position: sticky;
-    top: 5rem;
+    top: 5.5rem;
     width: 30%;
     height: fit-content;
     align-self: flex-start;
@@ -331,7 +333,8 @@ body {
         width: 100%;
       }
       .row {
-        @include flex(row, flex-start, flex-start, 10px);
+        @include flex(row, flex, center, 1rem);
+        @include size(100%, 50px, 5px);
         span {
           font-size: $subTitle;
         }
@@ -649,5 +652,40 @@ body {
         }
       }
     }
+  }
+
+  .experience {
+    @include size(100%, 100%, 15%);
+    @include flex(column, center, center, 1rem);
+    background-color: $color300;
+
+    .title {
+      top: 6rem;
+      background-color: $color300;
+      width: 100%;
+
+      p {
+        color: $color100;
+        font-size: $bigParagraph;
+        font-weight: 600;
+      }
+
+      h1 {
+        color: $color000;
+        font-size: $subTitle;
+        font-weight: 600;
+      }
+    }
+
+    .content {
+      width: 100%;
+    }
+  }
+
+  .footer {
+    @include size(100%, 5vh, 2%);
+    @include flex(row, center, center, 10px);
+    background-color: $color300;
+    color: $color000;
   }
 }

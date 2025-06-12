@@ -62,20 +62,18 @@ const Header = () => {
     <section className="header" id="home" ref={containerRef}>
       <p>Hi, i am</p>
       <h1>Mohammad Vino Arystio</h1>
-      <h2>
-        <AnimatePresence mode="wait" initial={false}>
-          <motion.div
-            key={titles[index]}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.5 }}
-            style={{ display: "inline-block" }}
-          >
-            {titles[index]}
-          </motion.div>
-        </AnimatePresence>
-      </h2>
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.div
+          key={titles[index]}
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.5 }}
+          style={{ display: "inline-block" }}
+        >
+          <h2>{titles[index]}</h2>
+        </motion.div>
+      </AnimatePresence>
 
       <div className="icon-buttons" ref={iconButtonsRef}>
         <Link

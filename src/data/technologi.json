@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "frontend",
+    "skill": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Type Script",
+      "ReactJS",
+      "VueJS",
+      "NextJs",
+      "React Native",
+      "SASS",
+      "Tailwind",
+      "Styled Components",
+      "Bootstrap",
+      "Mapbox",
+      "Axios",
+      "Framer Motion",
+      "Redux",
+      "React Query"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "backend",
+    "skill": [
+      "Python",
+      "Node JS",
+      "Flask",
+      "Express JS",
+      "Postgresql",
+      "My SQL",
+      "Sequelize",
+      "Docker",
+      "Postman"
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Other",
+    "skill": [
+      "RestAPI",
+      "graphQL",
+      "Windows",
+      "Ubuntu",
+      "Github",
+      "VS Code",
+      "Netlify",
+      "Vercel",
+      "Figma",
+      "Adobe Illustrator"
+    ]
+  }
+]

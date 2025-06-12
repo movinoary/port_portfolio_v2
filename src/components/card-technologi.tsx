@@ -41,12 +41,7 @@ const Cardtechnologi: React.FC<TickerProps> = ({ skills }) => {
       >
         {/* Render dua kali untuk loop seamless */}
         {[...skills, ...skills].map((skill, index) => (
-          <div
-            key={index}
-            style={{ marginRight: 20, cursor: "pointer" }}
-            onMouseEnter={() => setIsPaused(true)}
-            onMouseLeave={() => setIsPaused(false)}
-          >
+          <div key={index} style={{ marginRight: 20, cursor: "pointer" }}>
             <CardIcon type={skill} />
           </div>
         ))}

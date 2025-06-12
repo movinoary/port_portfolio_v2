@@ -192,7 +192,7 @@ const CardIcon: React.FC<ICard> = ({ type, path }) => {
     </p>
   ) : type === "link-web" ? (
     <Link
-      className="card-icon firefox"
+      className="firefox"
       href={path ?? "/"}
       target="_blank"
       rel="noreferrer"
@@ -203,7 +203,7 @@ const CardIcon: React.FC<ICard> = ({ type, path }) => {
     </Link>
   ) : type === "link-github" ? (
     <Link
-      className="card-icon github"
+      className="github"
       href={path ?? "/"}
       target="_blank"
       rel="noreferrer"
@@ -212,6 +212,46 @@ const CardIcon: React.FC<ICard> = ({ type, path }) => {
         <FaIcons.FaGithub />
       </span>
     </Link>
+  ) : type === "reactJs" ? (
+    <span className="reactJs">
+      <FaIcons.FaReact />
+    </span>
+  ) : type === "tailwind" ? (
+    <span className="tailwind">
+      <SiIcons.SiTailwindcss />
+    </span>
+  ) : type === "styled component" ? (
+    <span className="styled_component">
+      <SiIcons.SiStyledcomponents />
+    </span>
+  ) : type === "nextJs" ? (
+    <span className="nextJs">
+      <TbIcons.TbBrandNextjs />
+    </span>
+  ) : type === "scss" ? (
+    <span className="sass">
+      <SiIcons.SiSass />
+    </span>
+  ) : type === "mapbox" ? (
+    <span className="mapbox">
+      <SiIcons.SiMapbox />
+    </span>
+  ) : type === "axios" ? (
+    <span className="axios">
+      <SiIcons.SiAxios />
+    </span>
+  ) : type === "redux" ? (
+    <span className="redux">
+      <SiIcons.SiRedux />
+    </span>
+  ) : type === "framer-motion" ? (
+    <span className="framer_motion">
+      <SiIcons.SiFramer />
+    </span>
+  ) : type === "react-query" ? (
+    <span className="react_query">
+      <SiIcons.SiReactquery />
+    </span>
   ) : null;
 };
 

@@ -2,52 +2,45 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import CardNavigation from "@/components/card-navigation";
-
-const data = [
-  {
-    id: 1,
-    title: "about",
-  },
-  {
-    id: 2,
-    title: "experience",
-  },
-  {
-    id: 3,
-    title: "project",
-  },
-];
+import DataNav from "@/data/nav.json";
 
 const Nav = () => {
   const router = useRouter();
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState<boolean>(false);
+  const [color, setColor] = useState<boolean>(false);
 
-  const changeBackground = () => {
-    if (window.scrollY >= 300) {
-      setNavbar(true);
+  const handleScroll = () => {
+    const scrollY = window.scrollY;
+
+    console.log(scrollY);
+
+    setNavbar(scrollY >= 300);
+    if ((scrollY >= 986 && scrollY < 2190) || scrollY >= 5830) {
+      setColor(true);
     } else {
-      setNavbar(false);
+      setColor(false);
     }
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", changeBackground);
-
-    return () => {
-      window.removeEventListener("scroll", changeBackground);
-    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   const navigate = (url: string) => {
     router.push(url);
   };
 
   return (
-    <nav className={!navbar ? "nav" : "nav-scroll"}>
+    <nav
+      className={!navbar ? "nav" : "nav-scroll"}
+      style={{ background: `${!color ? "#353941" : "#26282b"}` }}
+    >
       <div>
         <h1 onClick={() => navigate("#home")}>VO</h1>
       </div>
       <div>
-        {data.map((d, i) => (
+        {DataNav.map((d, i) => (
           <CardNavigation key={i} title={d.title} />
         ))}
       </div>
