@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "Fullstack Developer",
   ],
   verification: {
-    google: "0LKRGk5uve0hPUt0HRXUYe587RWoUvCGAaDawi1g0yw",
+    google: "QCGDf-bPOwjQCrhnIOz8P4C4rn7WTeBsHk9XOTag-1o",
   },
   openGraph: {
     title: "Portofolio Vino Arystio",
