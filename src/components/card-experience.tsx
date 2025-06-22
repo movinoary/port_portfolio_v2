@@ -12,11 +12,6 @@ const CardExperience: React.FC<ICard> = ({ category }) => {
       <h1 className="office">{d.company}</h1>
       <h2 className="position">{d.title}</h2>
       <p className="desc">{d.summary}</p>
-      {d.responsibilities.map((dta, idx) => (
-        <p key={idx} className="desc">
-          {dta}
-        </p>
-      ))}
     </figure>
   ));
 };

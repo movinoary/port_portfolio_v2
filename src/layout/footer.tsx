@@ -10,7 +10,7 @@ const Footer = () => {
   };
   return (
     <footer className="footer">
-      <p>v.2.6.02 © Copyright 2025 VO ||</p>
+      <p>v.2.7.0 © Copyright 2025 VO ||</p>
       <button
         className="card-navigation"
         onClick={() => navigate("https://v1-portfolio-vo.netlify.app/")}

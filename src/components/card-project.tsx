@@ -1,10 +1,6 @@
 import React from "react";
 import { list_project } from "@/data/project";
 import Image from "next/image";
-import * as FaIcons from "react-icons/fa";
-import * as TbIcons from "react-icons/tb";
-import * as SiIcons from "react-icons/si";
-import Link from "next/link";
 import CardIcon from "./card-icon";
 
 const CardProject = () => {
@@ -33,16 +29,6 @@ const CardProject = () => {
                 <CardIcon type="link-github" path={item?.linkGit} />
               </div>
             </div>
-            {item.category === "web" && (
-              <div className="item_icon">
-                <h3>Techology</h3>
-                <div className="row">
-                  {item?.techology?.map((t, index) => (
-                    <CardIcon type={t} key={index} />
-                  ))}
-                </div>
-              </div>
-            )}
           </section>
         </figcaption>
       </figure>
